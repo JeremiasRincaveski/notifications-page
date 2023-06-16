@@ -14,11 +14,7 @@ fetch('./data.json')
       <div class="notification__container">
       <p class="notification__paragraph"><a href='#' class='name'>${item.name}</a> ${item.action}${item.description ? ` <a href='#' class='description ${regexClub ? 'club' : ''}'>${item.description}</a>` : ''} ${item.new ? "<span class='new'></span>" : ''} </p>
       <p class='time'>${item.time}</p>
-      ${item.message ? `
-        <div class='message'>'
-          <p>${item.message}</p>
-        </div>
-        ` 
+      ${item.message ? `<div class='message'><p>${item.message}</p></div>` 
         : ''}
       </div>
       ${item.picture ? `<img class='img' src='${item.picture}' alt=''/>` : ''}
