@@ -42,30 +42,33 @@ html {
 }
 
 body {
-  align-items: flex-start;
+  align-items: center;
   background-color: var(--very-light-grayish-blue);
   color: var(--dark-grayish-blue);
   display: flex;
-  height: 100vh;
+  height: max-content;
+  flex-direction: column;
   font-family: var(--font-family);
   font-size: var(--font-size);
   font-weight: var(--font-weight-regular);
   justify-content: center;
+  padding: 4rem 0;
   width: 100%;
 }
 
 main {
   background-color: var(--white);
+  border-radius: 13px;
   display: flex;
   flex-direction: column;
-  padding: 2rem 1rem;
+  padding: 0rem 1rem;
   width: min(100%, 700px);
 }
 
 .header {
   align-items: center;
   display: flex;
-  margin-bottom: 2rem;
+  margin: 2rem 0;
 }
 
 .header__title {
@@ -96,12 +99,13 @@ main {
 
 .header__button:hover {
   cursor: pointer;
+  color: var(--blue);
 }
 
 .notifications {
   display: flex;
   flex-direction: column;
-  gap: .8rem;
+  gap: .5rem;
 }
 
 .notification {
